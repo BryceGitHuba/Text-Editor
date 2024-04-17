@@ -4,12 +4,11 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "start:dev": "",
-        "start": "",
-        "server": "",
-        "build": "",
-        "install": "",
-        "client": ""
+        "start:dev": "concurrently \"npm run server --prefix ./server\" \"npm run dev --prefix ./client\"",
+        "start": "concurrently \"npm run server --prefix ./server\" \"npm run start --prefix ./client\"",
+        "server": "npm run server --prefix ./server",
+        "build": "npx webpack --mode production",
+        "client": "npm start --prefix ./client"
     },
     "keywords": [],
     "author": "",
@@ -20,6 +19,8 @@
     },
     "devDependencies": {
         "concurrently": "^5.2.0",
-        "nodemon": "^3.1.0"
+        "nodemon": "^3.1.0",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4"
     }
 }
