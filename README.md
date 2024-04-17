@@ -17,7 +17,7 @@ Clone the repository
 
 bash
 Copy code
-git clone https://github.com/yourusername/JATE.git
+git clone [https://github.com/yourusername/JATE.git](https://github.com/BryceGitHuba/Text-Editor)
 cd JATE
 Navigate to the Client Directory
 
